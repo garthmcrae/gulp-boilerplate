@@ -1,0 +1,21 @@
+{% import 'macros/icon.html' as macro %}
+{% extends 'layouts/default.html' %}
+
+{% block title %}My Page{% endblock %}
+
+{% block head %}
+  {% parent %}
+  <!-- additional style sheets -->
+{% endblock %}
+
+{% block content %}
+
+{% include 'modules/header.html' %}
+
+{{ macro.icon("profile", "Profile")}}
+
+<p>This is just a page.</p>
+
+{% include 'modules/footer.html' %}
+
+{% endblock %}
